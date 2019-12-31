@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from www.w3schools.com/js/tryit.asp?filename=tryjs_timing_clock by HTTrack Website Copier/3.x [XR&CO'2010], Fri, 22 Jun 2012 18:14:54 GMT -->
+<head>
+<style type="text/css">
+
+body {
+background-color:#0000ff;
+font-size:100px;
+text-align:center;
+}
+h2{
+position:absolute;
+font-size:20px;
+top:200px;
+left:50px;
+width:100%;
+}
+
+
+</style>
+
+
+<script type="text/javascript">
+function startTime()
+{
+var today=new Date();
+var h=today.getHours();
+var m=today.getMinutes();
+var s=today.getSeconds();
+// add a zero in front of numbers<10
+m=checkTime(m);
+s=checkTime(s);
+document.getElementById('txt').innerHTML=h+":"+m+":"+s;
+t=setTimeout('startTime()',500);
+}
+
+function checkTime(i)
+{
+if (i<10)
+  {
+  i="0" + i;
+  }
+return i;
+}
+</script>
+</head>
+
+<body onload="startTime()">
+<div id="txt"></div>
+</body>
+<h2>
+Purchasing Tickets through Internet is another convinient way to travel <br/> 
+with Bangladesh RailwayBook online and your ticket details will then be <br/>
+emailed to you instantly after payment through your VISA/MASTERCARD,DBBL Nexus <br/>
+ or Mobile Banking. Print it out and bring it along with your valid identity <br/>
+card to the station at least 15 minute pirior to your journey.</h2>
+
+
+
+
+
+</html>
+

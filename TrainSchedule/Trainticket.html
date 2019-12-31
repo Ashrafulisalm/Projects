@@ -1,0 +1,49 @@
+<html>
+
+<head><title>Train Ticket</title>
+<style type="text/css">
+body
+{ 
+background-image:url('img6.jpg');
+background-repeat:no-repeat;
+background-attachment:fixed;
+font-color:#00cc00;
+background-position:center; 
+text-align:center;
+}
+</style>
+</head> 
+
+<body>
+
+
+
+<form action="ticket.php" method="post">
+Name: <input type="text" name="name"><br>
+  <br><br>
+ Destination:<input type="text" name="dest">
+  <br><br>
+ Train Name:
+<select name="train" method="post">
+<option value="Ekota">Ekota</option>
+<option value="Drutojan">Drutojan</option>
+<option value="Silk-City" selected="selected">Silk-City</option>
+<option value="Podma">Podma</option>
+<option value="Lalmoni">Lalmoni</option>
+<option value="Sundorban">Sundorban</option>
+<option value="Nill Sagor">Nill Sagor</option>
+<option value="Chitra">Chitra</option>
+<option value="Local">Local</option>
+</select>
+  <br><br>
+ 
+  Type:
+  <input type="radio" name="condition" value="AC">AC
+  <input type="radio" name="condition" value="Non AC">Non AC
+  <br><br>
+<input type="submit">
+
+</form>
+
+</body>
+</html>
